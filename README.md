@@ -436,7 +436,6 @@ const Book = () => {
   font-size: 1rem;
 }
 ```
-
 #### Local Images (Public Folder)
 
 - Optional Video !!!
