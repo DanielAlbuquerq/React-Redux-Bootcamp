@@ -26,15 +26,6 @@ const Book = (props) => {
   );
 };
 
-  return (
-    <article className='book'>
-      <img src={props.img} alt={props.title} />
-      <h2>{props.title}</h2>
-      <h2>{props.author}</h2>
-    </article>
-  );
-};
-
 function BookList() {
 
   const {author, title, img} = firstBook
