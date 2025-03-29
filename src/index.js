@@ -21,6 +21,7 @@ const Book = (props) => {
     fontSize: '0.75rem',
     marginTop: '0.5rem',
   };
+
   return (
     <article className='book'>
       <img src={props.img} alt={props.title} />
@@ -31,10 +32,13 @@ const Book = (props) => {
 };
 
 function BookList() {
+
+  const {author, title, img} = firstBook
+
   return (
     <section className='booklist'>
-      <Book author = {firstBook.author} title= {firstBook.title} img={firstBook.img}/>
-      <Book author = {firstBook.author} title= {firstBook.title} img={firstBook.img}/>
+      <Book author = {author} title= {title} img={img}/>
+      <Book author = {author} title= {title} img={img}/>
       <Book author = {firstBook.author} title= {firstBook.title} img={firstBook.img}/>
     </section>
   );
