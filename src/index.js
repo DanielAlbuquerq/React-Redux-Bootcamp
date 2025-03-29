@@ -16,11 +16,15 @@ const secondBook = {
 };
 
 const Book = (props) => {
-  const inlineHeadingStyles = {
-    color: '#617d98',
-    fontSize: '0.75rem',
-    marginTop: '0.5rem',
-  };
+  const { img, title, author } = props;
+  return (
+    <article className='book'>
+      <img src={img} alt={title} />
+      <h2>{title}</h2>
+      <h4>{author} </h4>
+    </article>
+  );
+};
 
   return (
     <article className='book'>
