@@ -16,12 +16,12 @@ const books = [
   },
 ]
 
-const Book = ({img, title, author}) => {
+const Book = ({img, title, autho}) => {
   return (
     <article className='book'>
       <img src={img} alt={title} />
       <h2>{title}</h2>
-      <h4>{author} </h4>
+      <h4>{autho} </h4>
     </article>
   );
 };
@@ -33,8 +33,8 @@ function BookList() {
 
   return (
     <section className='booklist'>
-      {books.map((book) => {
-        return <Book key={book.id} {...book} />
+      {books.map((book, index) => {
+        return <Book key={index} {...book} />
       })}
     </section>
   );
