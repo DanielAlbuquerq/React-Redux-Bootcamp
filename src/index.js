@@ -16,15 +16,6 @@ const books = [
   },
 ]
 
-const Book = ({img, title, autho}) => {
-  return (
-    <article className='book'>
-      <img src={img} alt={title} />
-      <h2>{title}</h2>
-      <h4>{autho} </h4>
-    </article>
-  );
-};
 
 function BookList() {
 
@@ -36,9 +27,33 @@ function BookList() {
       {books.map((book, index) => {
         return <Book key={index} {...book} />
       })}
+      <EventTest />
     </section>
   );
 }
+
+const EventTest = () => {
+  const handleClick = () => {
+    alert('Button clicked');
+  }
+  return (
+    <div>
+      <h1>Event Test</h1>
+      <button type='button' onClick={handleClick}>Click me</button>
+    </div>
+  )
+}
+
+const Book = ({img, title, autho}) => {
+  return (
+    <article className='book'>
+      <img src={img} alt={title} />
+      <h2>{title}</h2>
+      <h4>{autho} </h4>
+    </article>
+  );
+};
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(<BookList />);
