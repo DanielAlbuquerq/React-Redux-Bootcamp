@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 
 import './index.css';
@@ -33,14 +33,21 @@ function BookList() {
 }
 
 const EventTest = () => {
-  const handleClick = () => {
-    alert('Button clicked');
+  const [value, setValue] = useState(' ');
+  const handleInput = (e) => {
+    console.log(e.target.value);
+  }
+  const handleSubmit = () => {
+    alert(value);
+    setValue(' ');
   }
   return (
-    <div>
-      <h1>Event Test</h1>
-      <button type='button' onClick={handleClick}>Click me</button>
-    </div>
+   <section>
+    <form>
+      <input type='text' onChange={(e) => setValue(e.target.value)} value={value}/>
+      <button type='button' onClick={handleSubmit}>Click me</button>
+    </form>
+   </section>
   )
 }
 
