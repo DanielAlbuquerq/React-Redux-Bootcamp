@@ -436,6 +436,10 @@ const Book = () => {
   font-size: 1rem;
 }
 ```
+<<<<<<< HEAD
+=======
+
+>>>>>>> 884e9b7 (first commit)
 #### Local Images (Public Folder)
 
 - Optional Video !!!
