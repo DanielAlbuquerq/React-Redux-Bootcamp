@@ -22,8 +22,6 @@ const increaseCount = () => {
   setCount((prevCount) => prevCount + 1); // Increment count
 
 };
-
-
 //____________________
   return (
     <div className='bookContainer'>

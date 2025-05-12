@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #f1f5f8;
+    color: #222;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .book_section {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+ @media screen and (min-width: 1000px) {
+    .book_section {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .book_section {
+      justify-items: center;
+    }
+  }
+  .bookContainer {
+    justify-items: center;
+  }
+
+    .book_section {
+    width: 90vw;
+    max-width: 1170px;
+    margin: 5rem auto;
+    display: grid;
+    gap: 2rem;
+      
+    justify-items: center;
+  }
+
+    .book_component {
+    background: #fff;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 2rem;
+    margin: 0%;
+    text-align: center;
+    position: relative;
+    width: 15em;
+    height: 18rem;
+    justify-items: center;
+    }
+
+  .book_title,
+  .book_author{
+    width: 12em;
+    height: 1.5em;
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .book_author{
+    color: rgb(134, 129, 124);
+  }
+
+  .book_component img {
+    width: 100%;
+    height: 10em;
+    margin-bottom: 1em;
+    object-fit: cover;
+  }
+
+  .book_number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-inline: 0.5rem;
+    font-size: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    background-color: rgb(255, 72, 0);
+    color: #fff;
+  }
