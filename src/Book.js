@@ -1,12 +1,12 @@
 
-const Book = ({img, title, author, id, findBook, incrementObj}) => {
+const Book = ({img, title, author, id, findBook, number}) => {
 
   return (
-    <article className='book'>
+    <article className='book_component'>
       <img src={img} alt={title} />
-      <h2>{title}</h2>
-      <button onClick={() => findBook(id)}>Click me</button>
-      <h4>{author} </h4>
+      <h2 className="book_title">{title}</h2>
+      <h4 className="book_author">{author} </h4>
+      <span className='book_number'>{`# ${number + 1}`}</span>
     </article>
   );
 };
