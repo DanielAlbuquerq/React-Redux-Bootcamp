@@ -1,13 +1,8 @@
 import React, {useState} from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-<<<<<<< HEAD
-import { books } from './books'; // Importing the books data
-import Book from './Book'; // Importing the Book component
-=======
 import  {books} from './booksList.js'; // Importing the books data
 import Book from './Book.js'; // Importing the Book component
->>>>>>> newbranch
 
 function BookList() {
 
